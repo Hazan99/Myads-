@@ -1,0 +1,22 @@
+{
+  "name": "myads-",
+  "version": "1.0.0",
+  "description": "my web app for ads",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hazan99/Myads-.git"
+  },
+  "keywords": [
+    "webapp"
+  ],
+  "author": "hazan pholey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hazan99/Myads-/issues"
+  },
+  "homepage": "https://github.com/Hazan99/Myads-#readme"
+}
