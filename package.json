@@ -13,8 +13,8 @@
   "keywords": [
     "webapp"
   ],
-  "build" {
-    "directory" : "./build"
+  "build": {
+    "directory": "./build"
   },
   "author": "hazan pholey",
   "license": "ISC",
