@@ -13,6 +13,9 @@
   "keywords": [
     "webapp"
   ],
+  "build" {
+    "directory" : "./build"
+  },
   "author": "hazan pholey",
   "license": "ISC",
   "bugs": {
