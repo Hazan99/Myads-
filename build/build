@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/e824570a64.js" crossorigin="anonymous"></script>
+    <meta content="width=device-width,minimum-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <title>account</title>
+    <style>
+        body{font-family: 'kanit', sans-serif;}
+       #bars{
+            font-weight: bold;
+            font-size: 30px;
+           }
+        #count{ border: 0px solid black;
+              border-radius: 10px;
+              height: 80px;
+              }
+          #roll{
+               border: 1px solid black;
+               border-radius: 15px;
+              }
+           #button{ position: fixed;
+                   border-radius: 20px;
+                   border: none;
+                   padding: 20px;
+                   color: white;
+                   background: linear-gradient(to right, #f800ff, #ba80ff);
+                  left: 35%;}
+      .navigation {
+  height: 88%;
+  width: 0;
+  border-radius: 0 30px 30px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 90px; /* Space for top content */
+  z-index: 1;
+}
+       
+.navigation a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: 'kanit', sans-serif;
+  display: block;
+}
 
+.navigation.expanded {
+  width: 250px;
+}
+
+ .content{
+  margin-left: 0px; /* Adjust to match sidebar width */
+  transition: margin-left 0.5s;
+    }
+   
+       #ani{  color: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 50px; 
+            font-size: 27px;
+            width: 69px;
+            background: linear-gradient(to right, #ff15e7, #8f00ff);    
+            }
+         #brands{ justify-content: space-around;
+         color: white;
+         display: flex;
+         font-size: 32px; }
+    </style>
+</head>
+<body>
+   
+  <i id="bars" class="fas fa-bars"></i>
+<nav id="navigation" class="navigation">
+<br><br>
+   <hr/> 
+      <li>
+        <a href="aboutus.html">About us</a>
+        <a href="mailto: hazanlenky@gmail.com">Contact us</a>
+        <a href="privacypolicy.html">privacy policy</a>
+        <br>
+        <br>
+        <br>
+      </li> 
+  <div id="brands"  <i class="fa-brands fa-facebook"></i> 
+      <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-twitter"></i></div>
+  </nav>
+   <br>
+   <br>
+   <center>
+  <div id="content" class="content">
+     <div id="roll">
+ <input type="text" id="count" value="0" style="color: red; width: 19%; font-size: 37px;" > </div>
+  <br><br>
+ <button id="button" onclick="myFunction();" value="click here">click here</button><br>
+ <br>
+ <br>
+ <br>
+ <br>
+  
+   <i id="ani" class="fas fa-gift fa-bounce"></i>  
+ </div>
+ </center>
+ <script>
+     function myFunction() {
+	
+	var data = document.getElementById("count").value;
+	var  datacount = (parseInt(data) + 1);
+	document.getElementById("count").value = datacount;	
+	document.getElementById("button").value = "Clicked";
+	
+}
+setInterval(function(){
+document.getElementById("button").click();	
+}, 4000);
+
+ 
+ const navigation =
+ document.getElementById('navigation');
+ const bars =
+ document.getElementById('bars');
+ bars.addEventListener( 'click', () => {
+  navigation.classList.toggle('expanded');
+  });
+  const content =
+  document.getElementById('content');
+ content.addEventListener( 'click', () => {
+    navigation.classList.remove('expanded');
+});
+ </script>
+</body>
+</html>
